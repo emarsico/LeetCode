@@ -1,3 +1,5 @@
+// Top 95.67% Runtime
+
 public class Solution {
     public string MergeAlternately(string word1, string word2) {
         char[] w1 = word1.ToCharArray();

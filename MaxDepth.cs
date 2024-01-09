@@ -11,6 +11,8 @@
  *     }
  * }
  */
+
+ // Top 88.15% Runtime
 public class Solution {
     public int MaxDepth(TreeNode root) {
         if(root == null || root.val == null)
