@@ -17,7 +17,13 @@ public class Solution {
         
         if(str1.IndexOf(minStr) == 0 && str1.Contains(String.Concat(Enumerable.Repeat(minStr, (str1.Length/minStr.Length)))))
         {
-            for(str1.Length == )
+            for(int i = minStr.Length; i < str2.Length; i += minStr.Length)
+            {
+                if(str2.Substring(i, minStr.Length) != minStr)
+                {
+                    return "";
+                }
+            }
 
             return minStr;
         }
