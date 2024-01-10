@@ -1,4 +1,7 @@
-// Top 95.67% Runtime
+
+
+ // Top 95.67% Runtime
+// 1/6/9
 
 public class Solution {
     public string MergeAlternately(string word1, string word2) {

@@ -1,4 +1,7 @@
-// Top 83.94% Runtime
+
+
+ // Top 83.94% Runtime
+// 1/8/9
 
 public class Solution {
     public string GcdOfStrings(string str1, string str2) {
