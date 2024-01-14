@@ -8,6 +8,47 @@
  */
 
 
+/** 
+ * Forward declaration of guess API.
+ * @param  num   your guess
+ * @return 	     -1 if num is higher than the picked number
+ *			      1 if num is lower than the picked number
+ *               otherwise return 0
+ * int guess(int num);
+ */
+
+
+ // Top 100% Runtime
+// 1/13/24
+
+public class Solution : GuessGame {
+    public int GuessNumber(int n) {
+        int high = n;
+        int low = 1;
+        int mid = low + (high - low) / 2;
+        int response = guess(mid);
+
+        while(response != 0)
+        {
+            if(response == -1)  // Too high
+            {
+                high = (mid - 1);
+            }
+            else    // Too low
+            {
+                low = (mid + 1);
+            }
+            mid = low + (high - low) / 2;
+            response = guess(mid);
+        }
+
+        return (mid);
+    }
+}
+
+
+/*
+
  // Top 71.09% Runtime
 // 1/12/24
 
@@ -42,7 +83,7 @@ public class Solution : GuessGame {
 
 }
 
-/*
+
 n = 8, ans = 3
 
 1, 8, 4
