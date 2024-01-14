@@ -1,5 +1,28 @@
 
 
+ // Top 70.78% Runtime
+// 1/14/24
+
+
+public class Solution {
+    public IList<IList<int>> FindDifference(int[] nums1, int[] nums2) {
+        var nums1Set = nums1.ToHashSet(); // ToHashSet creates a HashSet (No Duplicates)
+        var nums2Set = nums2.ToHashSet(); // var keyword is used instead of HashSet<int> since the type is obvious
+
+        nums1Set.ExceptWith(nums2.ToHashSet()); // ExceptWith removes the duplicates from the other set
+        nums2Set.ExceptWith(nums1.ToHashSet());
+
+        return new List<IList<int>> 
+        { 
+            nums1Set.ToList(),
+            nums2Set.ToList()
+        };
+    }
+} 
+ 
+ 
+
+ 
  // Top 21.08% Runtime (ouch)
 // 1/14/24
 
