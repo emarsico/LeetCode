@@ -1,5 +1,28 @@
 
 
+
+// 1/15/24
+
+public class Solution {
+   public bool CanPlaceFlowers(int[] flowerbed, int n) {
+        int i = 0;
+        while(i < flowerbed.Length){
+            if(flowerbed[i] == 0){
+                if(i == 0 || flowerbed[i-1] == 0){
+                    if(i==flowerbed.Length-1 || flowerbed[i+1]==0){
+                        n--;
+                        i++;    // This incrementing removes the need for modifying flowerbed.
+                    }
+                }
+            }
+            i++;
+        }
+        return n <=0;
+    }
+}
+
+
+
  // Top 36.39% Runtime
 // 1/15/24
 
