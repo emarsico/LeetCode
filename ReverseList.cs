@@ -10,7 +10,7 @@
  * }
  */
 
-  // Top 91.51% Runtime
+  // O(n) Computational Complexity
  // 1/9/24
 public class Solution {
     public ListNode ReverseList(ListNode head) {

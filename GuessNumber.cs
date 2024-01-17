@@ -18,7 +18,7 @@
  */
 
 
- // Top 100% Runtime
+ // O(n) Computational Complexity (Top 100% Runtime)
 // 1/13/24
 
 public class Solution : GuessGame {

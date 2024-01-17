@@ -12,7 +12,7 @@
  * }
  */
 
- // Top 88.15% Runtime
+ // O(n) Computational Complexity
 //  1/7/9
 
 public class Solution {
