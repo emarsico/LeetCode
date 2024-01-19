@@ -1,3 +1,7 @@
+
+ // O(n) Computational Complexity
+// 1/19/24
+
 public class Solution {
     public bool IsSubsequence(string s, string t) {
         if(s == "")
@@ -20,7 +24,7 @@ public class Solution {
         int subIndex = 0;
         for(int i = 0; i < parent.Length; i++)
         {
-            if(parent[i] == subseq[subIndex])
+            if((subIndex < subseq.Length) && parent[i] == subseq[subIndex])
             {
                 subIndex++;
             }
