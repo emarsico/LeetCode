@@ -25,11 +25,8 @@ public class Solution {
 
         if(head == null || head.next == null){ return head;}
 
-        if(head.next != null)
-        {
-            evenHead = head.next;
-            evenTail = head.next;
-        }
+        evenHead = head.next;
+        evenTail = head.next;
 
         while(current.next != null && current.next.next != null)
         {
